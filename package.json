@@ -1,8 +1,21 @@
 {
 	"name": "search-in-git",
 	"displayName": "Search in git",
-	"description": "Search selected text in git",
+	"description": "Search selected line or block in git",
+	"publisher": "FerrierBenjamin",
 	"version": "0.0.1",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/Benjioe/search-in-git"
+	},
+	"license": "MIT License",
+	"keywords": [
+        "git",
+        "search",
+        "find",
+        "selected text"
+    ],
+	"icon": "icon.png",
 	"engines": {
 		"vscode": "^1.33.0"
 	},
