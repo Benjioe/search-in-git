@@ -19,7 +19,6 @@
 	"engines": {
 		"vscode": "^1.38.0"
 	},
-	"enableProposedApi": true,
 	"categories": [
 		"Other"
 	],
