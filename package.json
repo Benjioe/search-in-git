@@ -5,16 +5,16 @@
 	"publisher": "FerrierBenjamin",
 	"version": "0.0.1",
 	"repository": {
-        "type": "git",
-        "url": "https://github.com/Benjioe/search-in-git"
+		"type": "git",
+		"url": "https://github.com/Benjioe/search-in-git"
 	},
 	"license": "MIT License",
 	"keywords": [
-        "git",
-        "search",
-        "find",
-        "selected text"
-    ],
+		"git",
+		"search",
+		"find",
+		"selected text"
+	],
 	"icon": "icon.png",
 	"engines": {
 		"vscode": "^1.38.0"
@@ -27,12 +27,28 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"keybindings": [
+			{
+				"command": "gitSearch.searchSelected",
+				"key": "ctrl+alt+f",
+				"mac": "cmd+alt+f"
+			}
+		],
 		"commands": [
 			{
 				"command": "gitSearch.searchSelected",
-				"title": "git-search: Search selected in git"
+				"title": "Search selected in git",
+				"category": "git-search"
 			}
-		]
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "gitSearch.searchSelected",
+					"group": "4_search@1"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
