@@ -3,7 +3,7 @@
 	"displayName": "Search in git",
 	"description": "Search selected line or block in git",
 	"publisher": "FerrierBenjamin",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Benjioe/search-in-git"
